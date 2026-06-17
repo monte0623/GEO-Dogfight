@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo-Dogfight: 網頁空戰遊戲</title>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Cesium.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cesiumContainer"></div>
+
+  <div id="hud-layer">
+    <div class="crosshair">+</div>
+    <div class="stats">
+      <p>速度 (SPD): <span id="speed">350</span> knots</p>
+      <p>高度 (ALT): <span id="altitude">0</span> ft</p>
+      <p>飛彈 (MSL): <span id="ammo">4</span></p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
